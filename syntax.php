@@ -15,20 +15,6 @@ class syntax_plugin_graphgear extends DokuWiki_Syntax_Plugin {
     var $colors;
 
     /**
-     * return some info
-     */
-    function getInfo(){
-        return array(
-            'author' => 'Andreas Gohr',
-            'email'  => 'andi@splitbrain.org',
-            'date'   => '2009-01-11',
-            'name'   => 'Graph Gear Plugin',
-            'desc'   => 'Display graphviz compatible graph descriptions through flash',
-            'url'    => 'http://wiki.splitbrain.org/plugin:graphgear',
-        );
-    }
-
-    /**
      * What kind of syntax are we?
      */
     function getType(){
