@@ -68,7 +68,7 @@ class syntax_plugin_graphgear extends DokuWiki_Syntax_Plugin {
 
         $xml   = $this->getXML($conf,$w,$h);
         $xmlid = md5($xml);
-        $cache = getcachename($md5,'graphgear');
+        $cache = getcachename($xmlid,'graphgear');
         io_saveFile($cache,$xml);
 
         return array(

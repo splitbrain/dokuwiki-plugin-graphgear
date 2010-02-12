@@ -11,7 +11,7 @@ require_once(DOKU_INC.'inc/pageutils.php');
 require_once(DOKU_INC.'inc/io.php');
 
 $xmlid = $_REQUEST['xmlid'];
-$cache = getcachename($md5,'graphgear');
+$cache = getcachename($xmlid,'graphgear');
 $time = @filemtime($cache);
 if(!$time){
     header("HTTP/1.0 404 Not Found");
