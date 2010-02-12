@@ -171,7 +171,7 @@ class syntax_plugin_graphgear extends DokuWiki_Syntax_Plugin {
             if($opts['image']){
                 $node['image'] = ml($opts['image'],array('w'=>40,'h'=>40),true,'&');
             }
-            if(preg_match('/^(box|rect|rectangle|polygon|diamond|trapezium|parallelogram|Msquare|box3d|component)$/',$opt['shape'])) $node['type'] = 'SquareNode';
+            if(preg_match('/^(box|rect|rectangle|polygon|diamond|trapezium|parallelogram|Msquare|box3d|component)$/',$opts['shape'])) $node['type'] = 'SquareNode';
 
             $xml .= '    <node '.html_attbuild($node)." />\n";
         }
