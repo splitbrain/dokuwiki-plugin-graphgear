@@ -42,7 +42,7 @@ class syntax_plugin_graphgear extends DokuWiki_Syntax_Plugin {
     /**
      * Handle the match
      */
-    function handle($data, $state, $pos, &$handler){
+    function handle($data, $state, $pos, Doku_Handler $handler){
         $data = explode("\n",$data);
         $conf  = array_shift($data);
         array_pop($data);
@@ -78,7 +78,7 @@ class syntax_plugin_graphgear extends DokuWiki_Syntax_Plugin {
         );
     }
 
-    function render($mode, &$R, $data) {
+    function render($mode, Doku_Renderer $R, $data) {
         if($mode != 'xhtml') return false;
 
         $R->doc .= sprintf('<object width="%d" height="%d">
