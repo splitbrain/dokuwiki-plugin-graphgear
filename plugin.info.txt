@@ -1,7 +1,7 @@
 base    graphgear
 author  Andreas Gohr
 email   andi@splitbrain.org
-date    2016-02-02
+date    2016-02-03
 name    Graph Gear Plugin
 desc    Display graphviz compatible graph descriptions through flash
 url     http://www.dokuwiki.org/plugin:graphgear
